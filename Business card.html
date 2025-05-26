@@ -1,0 +1,92 @@
+# HTML content with LinkedIn icon and hyperlink
+html_content = """
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Monument+Extended:wght@400;700&display=swap');
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .card {
+            border: 2px solid #d7df23;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #ffffff;
+            border-bottom: 2px solid #d7df23;
+            padding: 10px;
+            text-align: center;
+        }
+        .header h1 {
+            font-family: 'Monument Extended', sans-serif;
+            color: #d7df23;
+            margin: 0;
+        }
+        .header h2 {
+            font-family: 'Raleway', sans-serif;
+            color: #d1d3d4;
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content p {
+            color: #000000;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .linkedin {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .linkedin img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .linkedin a {
+            color: #0077b5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>SAETA</h1>
+            <h2>Orientación Corporativa</h2>
+        </div>
+        <div class="content">
+            <p>José Ignacio Figueroa Pinto</p>
+            <p>Foreign Trade Trainee</p>
+            <p>+52 2226236518</p>
+            <p>ignacio.pinto@saetaoc.com</p>
+            <div class="linkedin">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/jos%C3%A9-ignacio-figueroa-pinto-2b4362202/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+"""
+
+# Save the HTML content to a file
+with open("business_card_with_linkedin.html", "w") as file:
+    file.write(html_content)
+
+print("The HTML file with LinkedIn icon and hyperlink has been created successfully.")
+
